@@ -38,8 +38,8 @@ class Main extends PluginBase
         $this->saveDefaultConfig();
         $this->loadCategories();
 
-        $this->getServer()->getCommandMap()->register("buy", new BuyCommand("buy", $this));
-        $this->getServer()->getCommandMap()->register("sell", new SellCommand("sell", $this));
+        $this->getServer()->getCommandMap()->register("b", new BuyCommand("b", $this));
+        $this->getServer()->getCommandMap()->register("s", new SellCommand("s", $this));
 
         $this->getLogger()->info(TextFormat::GREEN . "Enabled.");
     }
